@@ -76,4 +76,50 @@ This is a special sequence used in several Raknet packets to, presumably, preven
 
 Strings in Raknet consist of a `uint16` length in bytes, then that number of UTF-8-encoded bytes. No null-termination is present.
 
+Unconnected Packets
+-------------------
 
+`0x01` - Unconnected Ping (Fetch MOTD)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x1C` - Unconnected Pong (MOTD)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x05` - Open Connect Request
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x06` - Open Connect Reply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x07` - Session Info Request
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x08` - Session Info Reply
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x19` - Incompatible Protocol Version
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Connected Packets
+-----------------
+
+`0x00` - Connected Ping
+^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x03` - Connected Pong
+^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x04` - Lost Connection
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x09` - Connection Request
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x10` - Connection Accept
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x13` - New Connection
+^^^^^^^^^^^^^^^^^^^^^^^
+
+`0x15` - Disconnect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
