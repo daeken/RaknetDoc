@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'RaknetDoc'
+copyright = '2024, Sera Brocious'
+author = 'Sera Brocious'
 
 release = '0.1'
 version = '0.1.0'
